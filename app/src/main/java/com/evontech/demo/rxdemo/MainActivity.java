@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void printHello(){
+        textView.setText("");
         Observable.just(textView.getText().toString())
                 .map(new io.reactivex.functions.Function<String, String>() {
                     @Override
